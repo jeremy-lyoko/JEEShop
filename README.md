@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 一.项目简介
 本项目主要使用了JavaWeb技术，包括Jsp，Servlet，JDBC
 
@@ -54,3 +55,6 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2018122622512067.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xldW5pdmVyc2l0eWV5ZQ==,size_16,color_FFFFFF,t_70)
 4.订单管理：显示所有订单，并对订单分类
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181226225243215.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xldW5pdmVyc2l0eWV5ZQ==,size_16,color_FFFFFF,t_70)
+=======
+# JEEShop
+>>>>>>> origin/master
