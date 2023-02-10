@@ -6,6 +6,7 @@ import com.Jeremy.service.impl.UserServiceImpl;
 import com.Jeremy.utils.UUIDUtils;
 import com.Jeremy.utils.UserBeanUtils;
 
+import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -18,7 +19,7 @@ import java.sql.SQLException;
 
 //处理用户信息相关的请求
 @WebServlet(name = "UserServlet", urlPatterns = "/userServlet")
-public class UserServlet {
+public class UserServlet{
     private UserService userService = new UserServiceImpl();
 
     //用户登录 查询数据库验证用户名和密码
@@ -30,7 +31,7 @@ public class UserServlet {
 
         //获取页面自动登陆选项框的值
         String autoLogin = request.getParameter("autoLogin");
-        //1->自动登录
+        //自动登录
         if ("1".equals(autoLogin)) {
             /**1.创建一个Cookie用于记住用户的登录名和密码*/
             Cookie autoLoginCookie = new Cookie("autoLoginCookie", username + "@" + password);

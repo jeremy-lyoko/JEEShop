@@ -18,11 +18,9 @@ public class EncodingFilter implements Filter {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        HttpServletResponse response = (HttpServletResponse) resp;
         HttpServletRequest request = (HttpServletRequest) req;
 
         request.setCharacterEncoding("UTF-8");
-        MyRequest myRequest = new MyRequest(request);
 
         chain.doFilter(req, resp);
     }

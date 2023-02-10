@@ -16,7 +16,7 @@ public class BaseServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
 
         try {
-            //1、获得请求的method的名称
+            //1、获得请求方式的名称
             String methodName = req.getParameter("method");
             if (methodName == null) {
                 methodName = "excute";
